@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Everence Brand Design Tokens */
+  --color-brand: #FF6700;
+  --color-heading: #757373;
+  --color-text: #000000;
+  --color-text-legal: #1A1A1A;
+  --color-surface-header: #F6F6F6;
+  --color-surface-alt: #F4F4F4;
+  --color-surface-soft: #F9F9F9;
+  --color-card-bg: #F5F5F5;
+  --color-white: #FFFFFF;
+  --color-placeholder: #B4B4B4;
+  --color-shadow: rgba(174, 174, 192, 0.30);
+  --color-highlight: #FFFFFF;
+
+  --background: #ffffff;
+  --foreground: #000000;
+
+  /* Font Families */
+  --font-campton: 'Campton', Arial, Helvetica, sans-serif;
+  --font-display: var(--font-campton), Arial, Helvetica, sans-serif;
+  --font-body: var(--font-campton), Arial, Helvetica, sans-serif;
+
+  /* Type Scale */
+  --type-hero-size: 64px;
+  --type-hero-line: 70px;
+  --type-display-size: 64px;
+  --type-display-line: 72px;
+  --type-card-title-size: 30px;
+  --type-card-title-line: 36px;
+  --type-subheading-size: 24px;
+  --type-subheading-line: 32px;
+  --type-nav-size: 18px;
+  --type-label-size: 18px;
+  --type-label-line: 24px;
+  --type-body-size: 16px;
+  --type-body-line: 24px;
+  --type-body-sm-size: 14px;
+  --type-body-sm-line: 22px;
+  --type-button-size: 16px;
+  --type-button-lg-size: 20px;
+  --type-button-sm-size: 14px;
+  --type-footer-size: 14px;
+  --type-footer-line: 17px;
+  --type-copyright-size: 12px;
+
+  /* Shadows */
+  --shadow-header: -1.27px -1.27px 3.8px #FFFFFF, 1.9px 1.9px 3.8px rgba(174, 174, 192, 0.30);
+  --shadow-button: 1.5px 1.5px 3px rgba(174, 174, 192, 0.30), -1px -1px 3px #FFFFFF;
+  --shadow-card: 1.5px 1.5px 3px rgba(174, 174, 192, 0.30), -1px -1px 3px #FFFFFF;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--background);
+  font-family: var(--font-campton), Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-campton), Arial, Helvetica, sans-serif;
+}

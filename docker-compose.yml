@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: everance_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: everance
+      POSTGRES_PASSWORD: everance_secret
+      POSTGRES_DB: everance_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U everance -d everance_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: everance_web
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      - DATABASE_URL=postgresql://everance:everance_secret@postgres:5432/everance_db?schema=public
+      - JWT_SECRET=everance-super-secret-jwt-key-for-development-change-in-production
+      - NODE_ENV=production
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+
