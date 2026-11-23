@@ -165,14 +165,15 @@ export default function HomePage() {
               {/* 3 Product Cards */}
               <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
                 {siteConfig.products.map((product) => (
-                  <div
+                  <Link
                     key={product.id}
-                    className="flex flex-col justify-between rounded-3xl border border-slate-200 bg-[#F5F5F5]/60 hover:bg-white p-8 shadow-sm hover:shadow-[1.5px_1.5px_6px_rgba(174,174,192,0.30)] transition-all"
+                    href={product.pageHref}
+                    className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-[#F5F5F5]/60 hover:bg-white p-8 shadow-sm hover:shadow-[1.5px_1.5px_6px_rgba(174,174,192,0.30)] transition-all cursor-pointer"
                   >
                     <div>
                       {/* Card Header: Icon container and Category Tag */}
                       <div className="flex items-center justify-between">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white border border-slate-200 text-xl font-mono text-slate-800">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white border border-slate-200 text-xl font-mono text-slate-800 group-hover:border-[#FF6700]/40 transition-colors">
                           {product.symbol}
                         </div>
                         <span className="rounded-full border border-slate-200 bg-white px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-slate-600">
@@ -181,7 +182,7 @@ export default function HomePage() {
                       </div>
 
                       {/* Title & Description */}
-                      <h3 className="mt-6 text-2xl lg:text-[26px] font-bold text-slate-900">
+                      <h3 className="mt-6 text-2xl lg:text-[26px] font-bold text-slate-900 group-hover:text-[#FF6700] transition-colors">
                         {product.name}
                       </h3>
                       <p className="mt-3 text-[14px] sm:text-[15px] text-slate-600 leading-relaxed">
@@ -201,15 +202,14 @@ export default function HomePage() {
 
                     {/* Bottom Explore Link */}
                     <div className="mt-8 pt-6 border-t border-slate-200/80">
-                      <Link
-                        href={product.pageHref}
-                        className="inline-flex items-center gap-1.5 text-[14px] sm:text-[15px] font-bold text-slate-900 hover:text-[#FF6700] transition-colors"
+                      <div
+                        className="inline-flex items-center gap-1.5 text-[14px] sm:text-[15px] font-bold text-slate-900 group-hover:text-[#FF6700] transition-colors"
                       >
                         Explore {product.name}
-                        <span className="text-[#FF6700]">↗</span>
-                      </Link>
+                        <span className="text-[#FF6700] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
