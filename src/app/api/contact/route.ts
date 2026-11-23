@@ -38,6 +38,7 @@ const VALID_PRODUCTS = [
   "Choose a product",
   "DroidScan",
   "ChainBreak",
+  "WebStrike",
   "NimbusQ",
   "Multiple products",
   "General enquiry",

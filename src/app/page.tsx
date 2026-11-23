@@ -49,7 +49,7 @@ export default function HomePage() {
 
                   {/* Description */}
                   <p className="text-base sm:text-lg lg:text-[20px] text-slate-700 max-w-xl leading-relaxed lg:leading-[32px]">
-                    Purpose-built tools that turn complex security data into clear decisions — from Android application analysis and Bitcoin wallet intelligence to cloud security and post-quantum readiness.
+                    Purpose-built tools that turn complex security data into clear decisions — from Android application analysis and Bitcoin wallet intelligence to website defence and threat intelligence.
                   </p>
 
                   {/* Buttons */}
@@ -139,7 +139,7 @@ export default function HomePage() {
             <div className="flex flex-wrap items-center gap-6 sm:gap-10 font-mono text-[11px] font-medium tracking-wider text-slate-700 uppercase">
               <span>APPLICATION SECURITY</span>
               <span>BLOCKCHAIN INTELLIGENCE</span>
-              <span>CLOUD & POST-QUANTUM</span>
+              <span>WEBSITE DEFENCE</span>
             </div>
           </div>
         </section>
@@ -292,7 +292,7 @@ export default function HomePage() {
                         <span className="text-[16px] font-bold text-white">Discover</span>
                       </div>
                       <p className="mt-1 text-[13px] sm:text-[14px] text-white/85 leading-relaxed pl-6">
-                        Bring the relevant app, wallet activity or cloud environment into view.
+                        Bring the relevant app, wallet activity or website asset into view.
                       </p>
                     </div>
 
@@ -348,7 +348,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="mt-2 text-[17px] sm:text-[18px] font-bold text-slate-900">Bring it in</h3>
                   <p className="mt-2 text-[13px] sm:text-[14px] text-slate-600 leading-relaxed">
-                    Submit an app package, Bitcoin wallet address or connect a cloud environment.
+                    Submit an app package, Bitcoin wallet address or enter a website domain.
                   </p>
                 </div>
 

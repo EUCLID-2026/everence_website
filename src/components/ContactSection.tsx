@@ -266,7 +266,7 @@ export default function ContactSection() {
                   <option value="Choose a product">Choose a product</option>
                   <option value="DroidScan">DroidScan (Mobile AppSec)</option>
                   <option value="ChainBreak">ChainBreak (Wallet Intelligence)</option>
-                  <option value="NimbusQ">NimbusQ (Cloud & PQC)</option>
+                  <option value="WebStrike">WebStrike (Website Defence)</option>
                   <option value="Multiple products">Multiple products</option>
                   <option value="General enquiry">General enquiry</option>
                 </select>

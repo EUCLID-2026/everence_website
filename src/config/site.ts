@@ -83,28 +83,28 @@ export const siteConfig = {
       pdfLabel: "PDF · PRODUCT ONE-PAGER",
     },
     {
-      id: "nimbusq",
-      name: "NimbusQ",
-      category: "CLOUD & PQC",
-      symbol: "◈",
-      tagline: "Understand cloud security posture and cryptographic readiness.",
+      id: "webstrike",
+      name: "WebStrike",
+      category: "WEBSITE DEFENCE",
+      symbol: "⚡",
+      tagline: "Understand the security behind every website you own.",
       description:
-        "Understand cloud security posture and cryptographic readiness, with practical visibility for the transition to post-quantum security.",
+        "WebStrike turns complex vulnerability tests, uptime tracking, and visual alterations into one clear security scorecard — 24/7 defacement sentinel, perimeter audit, real-time alerts, and professional executive reports.",
       bullets: [
-        "Multi-cloud asset inventory",
-        "Cryptographic readiness analysis",
-        "Risk scoring and migration guidance",
+        "24/7 defacement & downtime sentinel",
+        "Perimeter, port & misconfiguration audit",
+        "Phishing website detection & executive reports",
       ],
-      pageHref: "/products/nimbusq",
-      pdfHref: "/resources/nimbusq-product-overview.pdf",
-      pdfLabel: "PDF · PRODUCT OVERVIEW",
+      pageHref: "/products/webstrike",
+      pdfHref: "/resources/webstrike-product-one-pager.pdf",
+      pdfLabel: "PDF · PRODUCT ONE-PAGER",
     },
   ] as ProductItem[],
   links: {
     products: [
       { label: "DroidScan", href: "/products/droidscan" },
       { label: "ChainBreak", href: "/products/chainbreak" },
-      { label: "NimbusQ", href: "/products/nimbusq" },
+      { label: "WebStrike", href: "/products/webstrike" },
     ],
     explore: [
       { label: "Resources", href: "/resources" },
@@ -117,7 +117,5 @@ export const siteConfig = {
     ],
   },
   copyright: `© ${new Date().getFullYear()} Everence SecuraApps Pvt. Ltd. All rights reserved.`,
-  prototypeNotice:
-    "Website prototype · Privacy and legal pages to be finalised before launch",
 };
 

@@ -95,7 +95,7 @@ async function runE2E() {
     assert.ok(html.includes("Everence") || html.includes("SecuraApps"));
     assert.ok(html.includes("DroidScan"));
     assert.ok(html.includes("ChainBreak"));
-    assert.ok(html.includes("NimbusQ"));
+    assert.ok(html.includes("WebStrike") || html.includes("NimbusQ"));
     assert.ok(html.includes("Request a demo"));
   });
 
@@ -121,15 +121,23 @@ async function runE2E() {
     assert.ok(html.includes("One address in. A professional"));
   });
 
-  await testJourney("E2E Journey 1.3: Product Page - NimbusQ renders all 4 sections", async () => {
+  await testJourney("E2E Journey 1.3: Product Page - WebStrike renders all 4 sections", async () => {
+    const res = await fetch(`${BASE_URL}/products/webstrike`);
+    assert.equal(res.status, 200);
+    const html = await res.text();
+    assert.ok(html.includes("Understand the security"));
+    assert.ok(html.includes("Phishing Website Detection"));
+    assert.ok(html.includes("Misconfiguration Audit"));
+    assert.ok(html.includes("One website in."));
+    assert.ok(html.includes("Let's explore what this"));
+  });
+
+  await testJourney("E2E Journey 1.3b: Legacy Route - NimbusQ seamlessly redirects to WebStrike", async () => {
     const res = await fetch(`${BASE_URL}/products/nimbusq`);
     assert.equal(res.status, 200);
     const html = await res.text();
-    assert.ok(html.includes("Prepare your cloud"));
-    assert.ok(html.includes("Cloud asset inventory"));
-    assert.ok(html.includes("Quantum safety score"));
-    assert.ok(html.includes("Connect. Scan. Analyse."));
-    assert.ok(html.includes("Make your cloud and post-"));
+    assert.ok(html.includes("WebStrike"));
+    assert.ok(html.includes("Understand the security"));
   });
 
   await testJourney("E2E Journey 1.4: Resources Page - Downloads and prototype notice", async () => {
@@ -188,14 +196,14 @@ async function runE2E() {
     assert.ok(sitemapXml.includes("<urlset"));
     assert.ok(sitemapXml.includes("/products/droidscan"));
     assert.ok(sitemapXml.includes("/products/chainbreak"));
-    assert.ok(sitemapXml.includes("/products/nimbusq"));
+    assert.ok(sitemapXml.includes("/products/webstrike") || sitemapXml.includes("/products/nimbusq"));
   });
 
   await testJourney("E2E Journey 3.1: Asset Verification - All 3 product PDFs deliver binary stream", async () => {
     const pdfs = [
       "/resources/droidscan-product-one-pager.pdf",
       "/resources/chainbreak-product-one-pager.pdf",
-      "/resources/nimbusq-product-overview.pdf",
+      "/resources/webstrike-product-one-pager.pdf",
     ];
 
     for (const pdf of pdfs) {

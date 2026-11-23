@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "post-quantum cryptography",
     "DroidScan",
     "ChainBreak",
-    "NimbusQ",
+    "WebStrike",
     "Everence",
   ],
   authors: [{ name: "Everence SecuraApps" }],

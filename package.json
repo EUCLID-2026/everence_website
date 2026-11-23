@@ -10,7 +10,11 @@
     "test": "node --test tests/unit/*.test.ts",
     "test:integration": "node tests/integration/run-api-tests.mjs",
     "test:e2e": "node tests/e2e/e2e-journeys.mjs",
-    "test:all": "npm run test && npm run test:integration && npm run test:e2e"
+    "test:interactive": "node tests/e2e/phase3-interactive.mjs",
+    "test:security": "node tests/security/run-security-tests.mjs",
+    "test:audit": "node tests/audit/run-phase5-audits.mjs",
+    "test:matrix": "node tests/matrix/run-cross-device-tests.mjs",
+    "test:all": "npm run test && npm run test:integration && npm run test:e2e && npm run test:interactive && npm run test:security && npm run test:audit && npm run test:matrix"
   },
   "dependencies": {
     "@prisma/client": "^6.4.1",
@@ -29,6 +33,7 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "prisma": "^6.4.1",
+    "puppeteer-core": "^25.18.1",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3"
   }

@@ -37,12 +37,12 @@ const resourcesList: ResourceItem[] = [
     pdfHref: "/resources/chainbreak-product-one-pager.pdf",
   },
   {
-    id: "nimbusq",
-    name: "NimbusQ",
-    tag: "PDF · PRODUCT OVERVIEW",
+    id: "webstrike",
+    name: "WebStrike",
+    tag: "PDF · PRODUCT ONE-PAGER",
     description:
-      "Cloud security and post-quantum readiness platform. Covers asset inventory, cryptographic analysis, quantum safety scoring, posture assessment and reports.",
-    pdfHref: "/resources/nimbusq-product-overview.pdf",
+      "Website defence and threat intelligence platform. Covers phishing detection, perimeter & port reconnaissance, misconfiguration audits, 24/7 downtime sentinel, and one-click executive reports.",
+    pdfHref: "/resources/webstrike-product-one-pager.pdf",
   },
 ];
 
@@ -107,7 +107,7 @@ export default function ResourcesPage() {
                 Product resources
               </h2>
               <p className="mt-2 text-[13px] sm:text-[14px] text-slate-500">
-                Each resource opens or downloads the source PDF supplied for this website prototype.
+                Official product overviews and technical one-pagers for the Everence SecuraApps cybersecurity suite.
               </p>
             </div>
 
@@ -153,10 +153,6 @@ export default function ResourcesPage() {
               ))}
             </div>
 
-            {/* Orange Prototype Notice Banner */}
-            <div className="mt-12 rounded-2xl border border-[#FF6700]/30 bg-[#FF6700]/10 p-5 text-[13px] sm:text-[14px] text-slate-800 leading-relaxed shadow-sm">
-              These are the source documents supplied for the prototype. Before public launch, review product claims, add approved screenshots, and confirm whether each document is the final externally shareable version.
-            </div>
 
             {/* 3. BOTTOM CALL-TO-ACTION CARD (Everence Orange Card matching design system) */}
             <div className="mt-16 rounded-3xl bg-[#FF6700] text-white p-8 sm:p-12 shadow-xl border border-[#ff8438] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
