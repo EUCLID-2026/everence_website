@@ -182,11 +182,6 @@ export default function ChainBreakPage() {
                     </div>
                   ))}
                 </div>
-
-                {/* Orange Callout Box */}
-                <div className="rounded-2xl border border-[#FF6700]/30 bg-[#FF6700]/10 p-5 text-[13px] sm:text-[14px] text-slate-800 leading-relaxed shadow-sm">
-                  Product information on this page is based on the supplied ChainBreak product one-pager. Confirm deployment details, data sources, supported integrations and product availability with the SecuraApps team.
-                </div>
               </div>
 
               {/* Right Column: Sticky Sidebar Card (Screenshot 2) */}

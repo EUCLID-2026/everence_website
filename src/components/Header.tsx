@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 /**
@@ -52,23 +51,6 @@ export default function Header() {
       {/* Main Sticky Header */}
       <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-[#F6F6F6]/95 backdrop-blur-md transition-all shadow-[0_1.9px_3.8px_rgba(174,174,192,0.30)]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 py-3.5">
-          {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF6700] rounded"
-            aria-label="Everence SecuraApps Home"
-          >
-            <div className="relative h-10 w-36 sm:w-44">
-              <Image
-                src="/assets/everence-securaapps-logo.png"
-                alt="Everence SecuraApps logo"
-                fill
-                priority
-                className="object-contain object-left"
-              />
-            </div>
-          </Link>
-
           {/* Desktop Nav Links */}
           <nav className="hidden md:flex items-center gap-8 text-[16px] lg:text-[18px] font-medium text-[#000000]" aria-label="Main Navigation">
             {siteConfig.nav.map((item) => (
@@ -103,7 +85,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-slate-700 hover:bg-slate-100 hover:text-[#FF6700] focus:outline-none"
+            className="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-slate-700 hover:bg-slate-100 hover:text-[#FF6700] focus:outline-none ml-auto"
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle navigation menu"
           >

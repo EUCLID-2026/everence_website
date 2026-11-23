@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 export default function AuthLayout({
@@ -11,23 +9,7 @@ export default function AuthLayout({
     <div className="flex min-h-screen flex-col justify-between bg-slate-50 text-slate-900 selection:bg-[#FF6700] selection:text-white font-sans">
       {/* Top Header Bar */}
       <header className="border-b border-slate-200 bg-white px-6 py-4 shadow-sm">
-        <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-3 transition-opacity hover:opacity-90"
-            aria-label="Everence SecuraApps Home"
-          >
-            <div className="relative h-10 w-36 sm:w-44">
-              <Image
-                src="/assets/everence-securaapps-logo.png"
-                alt="Everence SecuraApps"
-                fill
-                className="object-contain object-left"
-                priority
-              />
-            </div>
-          </Link>
-
+        <div className="mx-auto flex max-w-6xl items-center justify-end">
           <div className="flex items-center gap-3 text-xs text-slate-500">
             <span className="hidden sm:inline-block">
               A development unit of{" "}

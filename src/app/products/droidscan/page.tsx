@@ -181,11 +181,6 @@ export default function DroidScanPage() {
                     </div>
                   ))}
                 </div>
-
-                {/* Orange Callout Box */}
-                <div className="rounded-2xl border border-[#FF6700]/30 bg-[#FF6700]/10 p-5 text-[13px] sm:text-[14px] text-slate-800 leading-relaxed shadow-sm">
-                  Product capabilities are described from the supplied DroidScan one-pager. Confirm supported package formats, deployment model and availability with the SecuraApps team.
-                </div>
               </div>
 
               {/* Right Column: Sticky Sidebar Card (Screenshot 2) */}
