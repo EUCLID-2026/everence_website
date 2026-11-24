@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "ChainBreak | Bitcoin Wallet Intelligence | Everence SecuraApps",
   description:
-    "Understand the behaviour behind every Bitcoin wallet. ChainBreak turns blockchain transaction data into a structured wallet profile — with a searchable ledger, analytics, visual insight and a professional report.",
+    "Understand the behaviour behind every Bitcoin wallet. ChainBreak turns blockchain transaction data into a structured wallet profile - with a searchable ledger, analytics, visual insight and a professional report.",
 };
 
 const featureList = [
@@ -90,60 +90,117 @@ export default function ChainBreakPage() {
               alt="Everence Tunnel"
               fill
               priority
-              className="object-cover object-center opacity-90"
+              className="object-cover object-center opacity-90 animate-tunnel-bg"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/40 lg:via-white/70"></div>
+            {/* Subtle Cybersecurity Scan Sweep */}
+            <div className="absolute inset-x-0 h-28 bg-gradient-to-b from-transparent via-[#FF6700]/[0.05] to-transparent pointer-events-none animate-scan-line"></div>
+            {/* Ambient Concentric Sonar Pulse */}
+            <div className="hidden md:block absolute right-[12%] top-1/2 -translate-y-1/2 w-96 h-96 pointer-events-none opacity-40">
+              <div className="absolute inset-0 rounded-full border border-[#FF6700]/25 sonar-circle-1"></div>
+              <div className="absolute inset-0 rounded-full border border-[#FF6700]/25 sonar-circle-2"></div>
+              <div className="absolute inset-0 rounded-full border border-[#FF6700]/25 sonar-circle-3"></div>
+            </div>
           </div>
 
           <div className="relative z-10 mx-auto max-w-7xl">
-            {/* Breadcrumb */}
-            <div className="text-xs text-slate-500 mb-6">
-              <Link href="/" className="hover:text-[#FF6700] transition-colors">
-                Home
-              </Link>
-              <span className="mx-1.5 text-slate-400">/</span>
-              <Link href="/#products" className="hover:text-[#FF6700] transition-colors">
-                Products
-              </Link>
-              <span className="mx-1.5 text-slate-400">/</span>
-              <span className="text-slate-900 font-medium">ChainBreak</span>
-            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              <div className="lg:col-span-8">
+                {/* Breadcrumb */}
+                <div className="text-xs text-slate-500 mb-6 animate-hero-1">
+                  <Link href="/" className="hover:text-[#FF6700] transition-colors">
+                    Home
+                  </Link>
+                  <span className="mx-1.5 text-slate-400">/</span>
+                  <Link href="/#products" className="hover:text-[#FF6700] transition-colors">
+                    Products
+                  </Link>
+                  <span className="mx-1.5 text-slate-400">/</span>
+                  <span className="text-slate-900 font-medium">ChainBreak</span>
+                </div>
 
-            {/* Eyebrow */}
-            <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-              <span>—</span>
-              <span>BITCOIN WALLET INTELLIGENCE</span>
-            </div>
+                {/* Eyebrow */}
+                <div className="flex items-center gap-2.5 text-xs font-semibold tracking-wider uppercase text-[#FF6700] animate-hero-2">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF6700] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF6700]"></span>
+                  </span>
+                  <span>-</span>
+                  <span>BITCOIN WALLET INTELLIGENCE</span>
+                </div>
 
-            {/* Main Heading */}
-            <h1 className="mt-4 text-4xl sm:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
-              Understand the behaviour <br />
-              behind every Bitcoin <br />
-              wallet.
-            </h1>
+                {/* Main Heading */}
+                <h1 className="mt-4 text-4xl sm:text-6xl font-bold tracking-tight text-slate-900 leading-tight animate-hero-3">
+                  Understand the behaviour <br />
+                  behind every Bitcoin <br />
+                  wallet.
+                </h1>
 
-            {/* Subtitle */}
-            <p className="mt-4 text-[15px] sm:text-[16px] text-slate-700 max-w-2xl leading-relaxed">
-              ChainBreak turns blockchain transaction data into a structured wallet profile — with a searchable ledger, analytics, visual insight and a professional report.
-            </p>
+                {/* Subtitle */}
+                <p className="mt-4 text-[15px] sm:text-[16px] text-slate-700 max-w-2xl leading-relaxed animate-hero-4">
+                  ChainBreak turns blockchain transaction data into a structured wallet profile - with a searchable ledger, analytics, visual insight and a professional report.
+                </p>
 
-            {/* Action Buttons */}
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/#contact"
-                className="inline-flex items-center gap-1.5 rounded-full bg-[#FF6700] hover:bg-[#e65c00] text-white font-semibold px-6 py-3 text-[14px] sm:text-[15px] shadow-[1.5px_1.5px_3px_rgba(174,174,192,0.30)] transition-all"
-              >
-                Request a walkthrough
-                <span>↗</span>
-              </Link>
-              <a
-                href="/resources/chainbreak-product-one-pager.pdf"
-                download
-                className="inline-flex items-center gap-1.5 rounded-full border border-slate-300 hover:border-slate-500 bg-white/80 hover:bg-white text-slate-900 font-semibold px-6 py-3 text-[14px] sm:text-[15px] shadow-sm transition-colors backdrop-blur-sm"
-              >
-                Download product overview
-                <span>↓</span>
-              </a>
+                {/* Action Buttons */}
+                <div className="mt-8 flex flex-wrap items-center gap-4 animate-hero-5">
+                  <Link
+                    href="/#contact"
+                    className="group inline-flex items-center gap-1.5 rounded-full bg-[#FF6700] hover:bg-[#e65c00] text-white font-semibold px-6 py-3 text-[14px] sm:text-[15px] shadow-[1.5px_1.5px_3px_rgba(174,174,192,0.30)] hover:shadow-[0_4px_18px_rgba(255,103,0,0.32)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0"
+                  >
+                    Request a walkthrough
+                    <span className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span>
+                  </Link>
+                  <a
+                    href="/resources/chainbreak-product-one-pager.pdf"
+                    download
+                    className="group inline-flex items-center gap-1.5 rounded-full border border-slate-300 hover:border-slate-500 bg-white/80 hover:bg-white text-slate-900 font-semibold px-6 py-3 text-[14px] sm:text-[15px] shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 backdrop-blur-sm"
+                  >
+                    Download product overview
+                    <span className="transition-transform duration-300 group-hover:translate-y-0.5">↓</span>
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Column: Floating Telemetry HUD Card (Desktop) */}
+              <div className="hidden lg:flex lg:col-span-4 justify-end animate-hero-5">
+                <div className="rounded-3xl border border-slate-200/90 bg-white/85 backdrop-blur-md p-6 shadow-[0_12px_36px_rgba(0,0,0,0.06)] animate-hero-badge w-full max-w-xs space-y-4">
+                  <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                    <div className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                      <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-800">
+                        WALLET INTELLIGENCE
+                      </span>
+                    </div>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-[#FF6700]/10 text-[#FF6700] font-semibold border border-[#FF6700]/20">
+                      ON-CHAIN
+                    </span>
+                  </div>
+
+                  <div className="space-y-2.5 text-xs">
+                    <div className="flex items-center justify-between py-1 border-b border-slate-50 text-slate-600">
+                      <span className="text-slate-500">Address Profile</span>
+                      <span className="font-mono font-semibold text-slate-900">UTXO / Ledger</span>
+                    </div>
+                    <div className="flex items-center justify-between py-1 border-b border-slate-50 text-slate-600">
+                      <span className="text-slate-500">Analytics</span>
+                      <span className="font-semibold text-emerald-600">Time & Volume</span>
+                    </div>
+                    <div className="flex items-center justify-between py-1 border-b border-slate-50 text-slate-600">
+                      <span className="text-slate-500">Visual Graph</span>
+                      <span className="font-mono font-semibold text-slate-900">Interactive Flows</span>
+                    </div>
+                    <div className="flex items-center justify-between py-1 text-slate-600">
+                      <span className="text-slate-500">Export</span>
+                      <span className="font-semibold text-[#FF6700]">Executive PDF</span>
+                    </div>
+                  </div>
+
+                  <div className="pt-2 border-t border-slate-100 text-[11px] font-mono text-slate-500 flex items-center justify-between">
+                    <span>TRANSACTION LEDGER</span>
+                    <span className="text-emerald-600 font-semibold">● SYNCED</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -156,7 +213,7 @@ export default function ChainBreakPage() {
               <div className="lg:col-span-8 space-y-10">
                 <div>
                   <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-                    <span>—</span>
+                    <span>-</span>
                     <span>WHAT IT HELPS YOU DO</span>
                   </div>
                   <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 leading-tight">
@@ -188,7 +245,7 @@ export default function ChainBreakPage() {
               <div className="lg:col-span-4 rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sticky top-28 space-y-6">
                 <div>
                   <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-                    <span>—</span>
+                    <span>-</span>
                     <span>DESIGNED FOR</span>
                   </div>
                   <h3 className="mt-2 text-[16px] sm:text-[18px] font-bold text-slate-900">
@@ -243,7 +300,7 @@ export default function ChainBreakPage() {
           <div className="mx-auto max-w-7xl">
             <div className="max-w-3xl">
               <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-                <span>—</span>
+                <span>-</span>
                 <span>HOW IT WORKS</span>
               </div>
               <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 leading-tight">
@@ -280,7 +337,7 @@ export default function ChainBreakPage() {
             <div className="rounded-3xl bg-[#FF6700] text-white p-8 sm:p-12 md:p-16 shadow-xl border border-[#ff8438] flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
               <div className="max-w-2xl space-y-3">
                 <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-white/90">
-                  <span>—</span>
+                  <span>-</span>
                   <span>TAKE THE NEXT STEP</span>
                 </div>
                 <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">

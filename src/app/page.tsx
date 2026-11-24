@@ -49,7 +49,7 @@ export default function HomePage() {
 
                   {/* Description */}
                   <p className="text-base sm:text-lg lg:text-[20px] text-slate-700 max-w-xl leading-relaxed lg:leading-[32px]">
-                    Purpose-built tools that turn complex security data into clear decisions — from Android application analysis and Bitcoin wallet intelligence to website defence and threat intelligence.
+                    Purpose-built tools that turn complex security data into clear decisions, from Android application analysis and Bitcoin wallet intelligence to website defence and threat intelligence.
                   </p>
 
                   {/* Buttons */}
@@ -406,13 +406,17 @@ export default function HomePage() {
               {/* 3 Resource Cards */}
               <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
                 {siteConfig.products.map((prod) => (
-                  <div
+                  <a
                     key={prod.id}
-                    className="flex flex-col justify-between rounded-3xl border border-slate-200 bg-[#F5F5F5]/60 hover:bg-white p-7 shadow-sm transition-all"
+                    href={prod.pdfHref}
+                    download
+                    className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-[#F5F5F5]/60 hover:bg-white p-7 shadow-sm hover:shadow-[1.5px_1.5px_6px_rgba(174,174,192,0.30)] transition-all cursor-pointer"
                   >
                     <div>
                       {/* Document Symbol */}
-                      <div className="font-mono text-2xl text-[#FF6700]">▤</div>
+                      <div className="font-mono text-2xl text-[#FF6700] group-hover:scale-110 transition-transform origin-left">
+                        ▤
+                      </div>
 
                       {/* Outline Tag */}
                       <div className="mt-3">
@@ -422,7 +426,9 @@ export default function HomePage() {
                       </div>
 
                       {/* Product Title */}
-                      <h3 className="mt-4 text-xl sm:text-[22px] font-bold text-slate-900">{prod.name}</h3>
+                      <h3 className="mt-4 text-xl sm:text-[22px] font-bold text-slate-900 group-hover:text-[#FF6700] transition-colors">
+                        {prod.name}
+                      </h3>
                       <p className="mt-2 text-[13px] sm:text-[14px] text-slate-600 leading-relaxed">
                         {prod.tagline}
                       </p>
@@ -430,16 +436,14 @@ export default function HomePage() {
 
                     {/* Download Pill Button matching Screenshot 5 */}
                     <div className="mt-8 pt-6 border-t border-slate-200/80">
-                      <a
-                        href={prod.pdfHref}
-                        download
-                        className="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-[14px] font-semibold text-slate-800 shadow-[1.5px_1.5px_3px_rgba(174,174,192,0.30)] hover:border-[#FF6700] hover:text-[#FF6700] transition-colors"
+                      <div
+                        className="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-[14px] font-semibold text-slate-800 shadow-[1.5px_1.5px_3px_rgba(174,174,192,0.30)] group-hover:border-[#FF6700] group-hover:text-[#FF6700] transition-colors"
                       >
                         Download PDF
-                        <span>↓</span>
-                      </a>
+                        <span className="group-hover:translate-y-0.5 transition-transform">↓</span>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
 

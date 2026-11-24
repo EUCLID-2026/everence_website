@@ -54,3 +54,6 @@ Desktop.ini
 *.tsbuildinfo
 next-env.d.ts
 tests/
+.puppeteer-profile-phase5/
+.puppeteer-profile-phase6/
+prisma/

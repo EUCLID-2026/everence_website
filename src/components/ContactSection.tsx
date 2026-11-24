@@ -95,7 +95,7 @@ export default function ContactSection() {
         {/* Section Header */}
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-            <span>—</span>
+            <span>-</span>
             <span>START A CONVERSATION</span>
           </div>
           <h2 className="mt-4 text-3xl sm:text-4xl lg:text-[48px] font-bold tracking-tight text-slate-900 leading-tight">

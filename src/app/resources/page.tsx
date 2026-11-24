@@ -77,7 +77,7 @@ export default function ResourcesPage() {
 
             {/* Eyebrow */}
             <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-              <span>—</span>
+              <span>-</span>
               <span>PRODUCT LIBRARY</span>
             </div>
 
@@ -100,7 +100,7 @@ export default function ResourcesPage() {
             {/* Section Header */}
             <div>
               <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-                <span>—</span>
+                <span>-</span>
                 <span>DOWNLOADS</span>
               </div>
               <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
@@ -114,13 +114,17 @@ export default function ResourcesPage() {
             {/* 3 PDF Resource Cards */}
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
               {resourcesList.map((item) => (
-                <div
+                <a
                   key={item.id}
-                  className="flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"
+                  href={item.pdfHref}
+                  download
+                  className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white hover:border-[#FF6700]/30 p-7 shadow-sm hover:shadow-[1.5px_1.5px_6px_rgba(174,174,192,0.30)] transition-all cursor-pointer"
                 >
                   <div>
                     {/* Orange Sheet Icon */}
-                    <div className="font-mono text-xl text-[#FF6700]">▤</div>
+                    <div className="font-mono text-xl text-[#FF6700] group-hover:scale-110 transition-transform origin-left">
+                      ▤
+                    </div>
 
                     {/* Tag outline pill */}
                     <div className="mt-3">
@@ -130,7 +134,9 @@ export default function ResourcesPage() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="mt-4 text-xl font-bold text-slate-900">{item.name}</h3>
+                    <h3 className="mt-4 text-xl font-bold text-slate-900 group-hover:text-[#FF6700] transition-colors">
+                      {item.name}
+                    </h3>
 
                     {/* Authentic Description */}
                     <p className="mt-2 text-[13px] sm:text-[14px] text-slate-600 leading-relaxed">
@@ -140,16 +146,14 @@ export default function ResourcesPage() {
 
                   {/* Solid Orange Download Button */}
                   <div className="mt-8 pt-6 border-t border-slate-100">
-                    <a
-                      href={item.pdfHref}
-                      download
-                      className="inline-flex items-center gap-1.5 rounded-full bg-[#FF6700] hover:bg-[#e65c00] text-white font-semibold px-5 py-2.5 text-[14px] shadow-[1.5px_1.5px_3px_rgba(174,174,192,0.30)] transition-all"
+                    <div
+                      className="inline-flex items-center gap-1.5 rounded-full bg-[#FF6700] group-hover:bg-[#e65c00] text-white font-semibold px-5 py-2.5 text-[14px] shadow-[1.5px_1.5px_3px_rgba(174,174,192,0.30)] transition-all"
                     >
                       Download PDF
-                      <span>↓</span>
-                    </a>
+                      <span className="group-hover:translate-y-0.5 transition-transform">↓</span>
+                    </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
 
@@ -158,7 +162,7 @@ export default function ResourcesPage() {
             <div className="mt-16 rounded-3xl bg-[#FF6700] text-white p-8 sm:p-12 shadow-xl border border-[#ff8438] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-white/90">
-                  <span>—</span>
+                  <span>-</span>
                   <span>NEED MORE DETAIL?</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight">

@@ -51,8 +51,11 @@ export default function Header() {
       {/* Main Sticky Header */}
       <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-[#F6F6F6]/95 backdrop-blur-md transition-all shadow-[0_1.9px_3.8px_rgba(174,174,192,0.30)]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 py-3.5">
-          {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-8 text-[16px] lg:text-[18px] font-medium text-[#000000]" aria-label="Main Navigation">
+          {/* Left Spacer to mathematically center the middle nav against the right action buttons */}
+          <div className="hidden md:flex flex-1 items-center justify-start"></div>
+
+          {/* Desktop Nav Links (Centered) */}
+          <nav className="hidden md:flex items-center justify-center gap-8 text-[16px] lg:text-[18px] font-medium text-[#000000]" aria-label="Main Navigation">
             {siteConfig.nav.map((item) => (
               <Link
                 key={item.label}
@@ -65,13 +68,13 @@ export default function Header() {
           </nav>
 
           {/* Desktop Action Buttons */}
-          <div className="hidden md:flex items-center gap-4">
-            <Link
+          <div className="hidden md:flex flex-1 items-center justify-end gap-4">
+            {/* <Link
               href="/login"
               className="text-[14px] lg:text-[16px] font-semibold text-slate-700 hover:text-[#000000] px-2 py-1 rounded transition-colors"
             >
               Sign In
-            </Link>
+            </Link> */}
             <Link
               href={siteConfig.cta.href}
               className="inline-flex items-center gap-1.5 rounded-full bg-[#FF6700] hover:bg-[#e65c00] text-white font-semibold px-6 py-2.5 text-[14px] lg:text-[16px] shadow-[1.5px_1.5px_3px_rgba(174,174,192,0.30)] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF6700]"
@@ -107,13 +110,13 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
-              <Link
+              {/* <Link
                 href="/login"
                 onClick={() => setMobileMenuOpen(false)}
                 className="rounded-lg px-3 py-2 text-[16px] font-medium text-slate-800 hover:bg-slate-50 hover:text-[#FF6700] transition-colors"
               >
                 Sign In
-              </Link>
+              </Link> */}
             </nav>
             <div className="pt-2 border-t border-slate-100">
               <Link

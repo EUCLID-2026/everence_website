@@ -1,4 +1,4 @@
-# Everence SecuraApps — Project Overview & Technical Specification
+# Everence SecuraApps - Project Overview & Technical Specification
 
 > **Document Version**: 1.0.0  
 > **Date**: November 3, 2026  
@@ -28,7 +28,7 @@ The visual design language strictly mirrors the authentic SecuraApps design toke
 | **Primary Typography** | `DM Sans`, sans-serif | Global headings, body copy, form fields, and navigation buttons |
 | **Canvas Background** | `#FFFFFF` (White) / `#F8FAFC` (Slate-50) | Main page backgrounds, feature card containers, and forms |
 | **Hero & Card Canvas** | `#0C1E28` (Deep Navy) | Hero sections, philosophy cards, CTA banners, and footer (`#07131A`) |
-| **Accent & CTA** | `#F59E0B` (Amber / Gold) | Section eyebrows (`—`), primary CTA pill buttons, active badges, and focus rings |
+| **Accent & CTA** | `#F59E0B` (Amber / Gold) | Section eyebrows (`-`), primary CTA pill buttons, active badges, and focus rings |
 | **Border Treatments** | `border-slate-200/80` (Light) / `border-slate-800` (Dark) | Subtle separation for cards, lists, and header navigation |
 | **Radar Visual** | Orbital SVG circles with glowing diamond badge `✳` | Interactive visual center on the homepage hero |
 
@@ -200,7 +200,7 @@ npm run test:all
 
 ### Test Suite Breakdown
 
-#### 1. Phase 1: Unit & Security Tests (`npm test`) — 15 Tests
+#### 1. Phase 1: Unit & Security Tests (`npm test`) - 15 Tests
 * **Password Policy ([`tests/unit/password-policy.test.ts`](file:///d:/everance/tests/unit/password-policy.test.ts))**:
   * Accepts strong compliant passwords.
   * Rejects passwords under 10 characters.
@@ -215,7 +215,7 @@ npm run test:all
   * Catches bot honeypots.
   * Enforces minimum/maximum message lengths.
 
-#### 2. Phase 2: API Integration Tests (`npm run test:integration`) — 13 Tests
+#### 2. Phase 2: API Integration Tests (`npm run test:integration`) - 13 Tests
 * Probes the live compiled Next.js server on an isolated port (`:3099`).
 * Tests `POST /api/contact` valid submission (`200`).
 * Tests stealth honeypot silent trap (`200` without email delivery).
@@ -226,7 +226,7 @@ npm run test:all
 * Tests `POST /api/auth/logout` clean termination (`200`).
 * Tests deliverability of all 3 product PDF one-pagers (`200 OK`, valid binary stream).
 
-#### 3. Phase 3: End-to-End Browser Journeys (`npm run test:e2e`) — 10 Tests
+#### 3. Phase 3: End-to-End Browser Journeys (`npm run test:e2e`) - 10 Tests
 * Tests visitor journey across `/`, `/products/droidscan`, `/products/chainbreak`, `/products/nimbusq`, and `/resources`.
 * Tests full credential forms on `/login` and `/signup`.
 * Tests protected route security guard on `/dashboard`.

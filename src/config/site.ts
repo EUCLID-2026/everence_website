@@ -89,7 +89,7 @@ export const siteConfig = {
       symbol: "⚡",
       tagline: "Understand the security behind every website you own.",
       description:
-        "WebStrike turns complex vulnerability tests, uptime tracking, and visual alterations into one clear security scorecard — 24/7 defacement sentinel, perimeter audit, real-time alerts, and professional executive reports.",
+        "WebStrike turns complex vulnerability tests, uptime tracking, and visual alterations into one clear security scorecard - 24/7 defacement sentinel, perimeter audit, real-time alerts, and professional executive reports.",
       bullets: [
         "24/7 defacement & downtime sentinel",
         "Perimeter, port & misconfiguration audit",
