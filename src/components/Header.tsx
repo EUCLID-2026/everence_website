@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
@@ -51,8 +52,24 @@ export default function Header() {
       {/* Main Sticky Header */}
       <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-[#F6F6F6]/95 backdrop-blur-md transition-all shadow-[0_1.9px_3.8px_rgba(174,174,192,0.30)]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 py-3.5">
-          {/* Left Spacer to mathematically center the middle nav against the right action buttons */}
-          <div className="hidden md:flex flex-1 items-center justify-start"></div>
+          {/* Logo */}
+          <div className="flex flex-1 items-center justify-start">
+            <Link
+              href="/"
+              className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF6700] rounded"
+              aria-label="Everence SecuraApps Home"
+            >
+              <div className="relative h-9 w-32 sm:h-10 sm:w-44">
+                <Image
+                  src="/assets/logo.jpeg"
+                  alt="Everence SecuraApps logo"
+                  fill
+                  priority
+                  className="object-contain object-left mix-blend-multiply"
+                />
+              </div>
+            </Link>
+          </div>
 
           {/* Desktop Nav Links (Centered) */}
           <nav className="hidden md:flex items-center justify-center gap-8 text-[16px] lg:text-[18px] font-medium text-[#000000]" aria-label="Main Navigation">
