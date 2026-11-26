@@ -41,7 +41,7 @@ const resourcesList: ResourceItem[] = [
     name: "WebStrike",
     tag: "PDF · PRODUCT ONE-PAGER",
     description:
-      "Website defence and threat intelligence platform. Covers phishing detection, perimeter & port reconnaissance, misconfiguration audits, 24/7 downtime sentinel, and one-click executive reports.",
+      "Website defence and cloud security platform. Covers cloud posture management (Azure, AWS, GCP), PQC readiness, website audits, network probing, phishing detection and one-click executive reports.",
     pdfHref: "/resources/webstrike-product-one-pager.pdf",
   },
 ];

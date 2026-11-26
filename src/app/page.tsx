@@ -35,7 +35,7 @@ export default function HomePage() {
                 <div className="lg:col-span-7 space-y-6">
                   {/* Eyebrow */}
                   <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-                    <span>—</span>
+                    <span>-</span>
                     <span>PRODUCT ENGINEERING · CYBERSECURITY</span>
                   </div>
 
@@ -49,7 +49,7 @@ export default function HomePage() {
 
                   {/* Description */}
                   <p className="text-base sm:text-lg lg:text-[20px] text-slate-700 max-w-xl leading-relaxed lg:leading-[32px]">
-                    Purpose-built tools that turn complex security data into clear decisions, from Android application analysis and Bitcoin wallet intelligence to website defence and threat intelligence.
+                    Purpose-built tools that turn complex security data into clear decisions, from Android application analysis and Bitcoin wallet intelligence to website defence and cloud security.
                   </p>
 
                   {/* Buttons */}
@@ -139,7 +139,7 @@ export default function HomePage() {
             <div className="flex flex-wrap items-center gap-6 sm:gap-10 font-mono text-[11px] font-medium tracking-wider text-slate-700 uppercase">
               <span>APPLICATION SECURITY</span>
               <span>BLOCKCHAIN INTELLIGENCE</span>
-              <span>WEBSITE DEFENCE</span>
+              <span>WEBSITE & CLOUD SECURITY</span>
             </div>
           </div>
         </section>
@@ -150,7 +150,7 @@ export default function HomePage() {
             <div className="mx-auto max-w-7xl">
               <div className="max-w-3xl">
                 <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-                  <span>—</span>
+                  <span>-</span>
                   <span>THE PRODUCT PORTFOLIO</span>
                 </div>
                 <h2 className="mt-4 text-3xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight text-slate-900 leading-tight lg:leading-[64px]">
@@ -224,7 +224,7 @@ export default function HomePage() {
                 {/* Left Side: Built around the decision you need to make (7 Cols) */}
                 <div className="lg:col-span-7">
                   <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-                    <span>—</span>
+                    <span>-</span>
                     <span>FROM COMPLEXITY TO CLARITY</span>
                   </div>
 
@@ -273,7 +273,7 @@ export default function HomePage() {
                 {/* Right Side: Featured Everence Orange Philosophy Card (5 Cols) */}
                 <div className="lg:col-span-5 rounded-3xl bg-[#FF6700] text-white p-8 sm:p-10 shadow-xl border border-[#ff8438]">
                   <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-white/90">
-                    <span>—</span>
+                    <span>-</span>
                     <span>OUR PRODUCT PHILOSOPHY</span>
                   </div>
 
@@ -328,7 +328,7 @@ export default function HomePage() {
             <div className="mx-auto max-w-7xl">
               <div className="max-w-3xl">
                 <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-                  <span>—</span>
+                  <span>-</span>
                   <span>A CLEAR WORKFLOW</span>
                 </div>
                 <h2 className="mt-4 text-3xl sm:text-4xl lg:text-[48px] font-extrabold tracking-tight text-slate-900 leading-tight lg:leading-[56px]">
@@ -348,7 +348,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="mt-2 text-[17px] sm:text-[18px] font-bold text-slate-900">Bring it in</h3>
                   <p className="mt-2 text-[13px] sm:text-[14px] text-slate-600 leading-relaxed">
-                    Submit an app package, Bitcoin wallet address or enter a website domain.
+                    Submit an app package, Bitcoin wallet address or enter a website domain or cloud account.
                   </p>
                 </div>
 
@@ -392,7 +392,7 @@ export default function HomePage() {
             <div className="mx-auto max-w-7xl">
               <div className="max-w-3xl">
                 <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#FF6700]">
-                  <span>—</span>
+                  <span>-</span>
                   <span>RESOURCES</span>
                 </div>
                 <h2 className="mt-4 text-3xl sm:text-4xl lg:text-[48px] font-extrabold tracking-tight text-slate-900 leading-tight lg:leading-[56px]">
@@ -468,7 +468,7 @@ export default function HomePage() {
               <div className="rounded-3xl bg-[#FF6700] text-white p-8 sm:p-12 md:p-16 shadow-xl border border-[#ff8438] flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
                 <div className="max-w-2xl space-y-4">
                   <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-white/90">
-                    <span>—</span>
+                    <span>-</span>
                     <span>EVERENCE SECURAAPPS</span>
                   </div>
                   <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight text-white leading-tight lg:leading-[52px]">

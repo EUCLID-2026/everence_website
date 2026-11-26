@@ -6,53 +6,53 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "WebStrike | Website Defence & Threat Intelligence | Everence SecuraApps",
+  title: "WebStrike | Website & Cloud Security | Everence SecuraApps",
   description:
-    "Understand the security behind every website you own. WebStrike turns complex vulnerability tests, uptime tracking, and visual alterations into one clear security scorecard.",
+    "Understand the security behind every website and cloud you own. WebStrike turns website audits, network probing, uptime tracking, phishing detection and cloud posture checks into one clear security scorecard.",
 };
 
 const featureList = [
   {
-    title: "Phishing Website Detection",
-    badge: "PHISHING",
+    title: "WebAudit",
+    badge: "WEBSECURITY",
     description:
-      "Finds lookalike domains using permutations and homoglyphs. Checks SSL, page content and login forms, with visual-clone detection to flag impersonation.",
-    highlight: "Spot brand impersonation before users are deceived.",
+      "Crawls the site, searches directories, and audits security headers, cookies, SSL/TLS certificates and email-spoofing protection. Enumerates subdomains and scans for known vulnerabilities, exposures and default credentials.",
+    highlight: "Find the gaps before attackers do.",
   },
   {
-    title: "Perimeter & Port Reconnaissance",
-    badge: "PORT SCAN",
+    title: "NetProbe",
+    badge: "WEBSECURITY",
     description:
-      "Multi-threaded Nmap scans map open, filtered, and closed TCP/UDP ports. Extracts service banners and version info, flagging potentially exploitable entry points.",
+      "Multi-threaded port scans maps open, filtered, and closed TCP/UDP ports. Extracts service banners and versions, checks them against known-vulnerability lists, and flags exploitable entry points.",
     highlight: "Close backdoors before attackers find them.",
   },
   {
-    title: "Misconfiguration Audit",
-    badge: "MISCONFIG",
+    title: "Uptime",
+    badge: "WEBSECURITY",
     description:
-      "Audits 15+ HTTP headers (HSTS, CSP, CORS), SSL/TLS certificate health, open directory exposure, website crawling, and default credential testing in a single pass.",
-    highlight: "Eliminate configuration gaps instantly.",
-  },
-  {
-    title: "Always-On Downtime Sentinel",
-    badge: "DOWNTIME",
-    description:
-      "High-frequency HTTP/HTTPS polling tracks availability and response latency, recording exact incident timestamps. Email alerts fire the moment any polled asset goes down.",
+      "High-frequency HTTP/HTTPS polling tracks availability and response latency, recording exact incident timestamps. Email alerts fire when a monitored asset stays down past your set threshold.",
     highlight: "Know your site is down before customers do.",
   },
   {
-    title: "Live Command Dashboard",
-    badge: "DASHBOARD",
+    title: "PhisOps",
+    badge: "PHISHING",
     description:
-      "WebSocket event bus streams real-time scan telemetry, critical alert feeds, and threat radar charts into a single-pane executive command center with zero polling latency.",
-    highlight: "Your entire fleet visible at a glance.",
+      "A phishing scanner that detects phishing domains targeting your organisation, so you can act before your customers and staff are caught out.",
+    highlight: "Spot the phish before it lands.",
   },
   {
-    title: "One-Click Executive Reports",
-    badge: "REPORTS",
+    title: "Cloud Posture Management",
+    badge: "CLOUD",
     description:
-      "Converts raw scanner findings into a board-ready PDF with letter grades (A to F), CVSS severity scores, a visual findings matrix, and plain-language remediation steps.",
-    highlight: "Presentation-ready evidence in a single click.",
+      "Read-only scans of Azure, AWS and GCP accounts against CIS benchmarks. Builds a cloud bill of materials of every resource checked, with the misconfigurations found and how to fix them.",
+    highlight: "Every cloud resource, accounted for.",
+  },
+  {
+    title: "PQC Cloud Readiness",
+    badge: "CLOUD",
+    description:
+      "Audits cloud keys and cryptographic algorithms against NIST post-quantum standards, flagging RSA and ECC to migrate to ML-KEM and ML-DSA before quantum decryption becomes practical.",
+    highlight: "Be quantum-ready before it matters.",
   },
 ];
 
@@ -68,23 +68,23 @@ const audiences = [
 const workflowSteps = [
   {
     step: "STEP 01 · INPUT",
-    title: "Add Website Asset",
-    description: "Enter a domain or URL. No software or code changes required.",
+    title: "Add an Asset",
+    description: "Enter a domain or URL, or connect a cloud account with read-only access.",
   },
   {
     step: "STEP 02 · DISCOVERY",
     title: "Automated Deep Audit",
-    description: "Checks headers, ports, SSL health, and captures certified snapshots.",
+    description: "Audits the web, network, phishing and cloud posture in a single pass.",
   },
   {
-    step: "STEP 03 · SENTINEL",
-    title: "24/7 Active Watchdog",
-    description: "Sentinels watch for defacement, outages, and newly exposed risks.",
+    step: "STEP 03 · WATCH",
+    title: "Always-On Uptime",
+    description: "Uptime monitoring and repeat audits surface outages and newly exposed risks.",
   },
   {
     step: "STEP 04 · OUTCOME",
     title: "Executive Report",
-    description: "Instant email alerts, plus on-demand PDF audit report export.",
+    description: "Email alerts, plus on-demand graded PDF reports.",
   },
 ];
 
@@ -138,18 +138,19 @@ export default function WebStrikePage() {
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF6700]"></span>
                   </span>
                   <span>-</span>
-                  <span>WEBSITE DEFENCE · THREAT INTELLIGENCE</span>
+                  <span>WEBSITE & CLOUD SECURITY</span>
                 </div>
 
                 {/* Main Heading */}
                 <h1 className="mt-4 text-4xl sm:text-6xl font-bold tracking-tight text-slate-900 leading-tight animate-hero-3">
-                  Understand the security <br />
-                  behind every website you own.
+                  Understand the security behind <br />
+                  every website and <br />
+                  cloud you own.
                 </h1>
 
                 {/* Subtitle */}
                 <p className="mt-4 text-[15px] sm:text-[16px] text-slate-700 max-w-2xl leading-relaxed animate-hero-4">
-                  WebStrike turns complex vulnerability tests, uptime tracking, and visual alterations into one clear security scorecard - 24/7 defacement sentinel, perimeter audit, real-time alerts, and professional executive reports. No agents. No disruption. No guesswork.
+                  WebStrike turns website audits, network probing, uptime tracking, phishing detection and cloud posture checks into one clear security scorecard - with professional executive reports. No agents to install. Read-only cloud access. No guesswork.
                 </p>
 
                 {/* Action Buttons */}
@@ -179,11 +180,11 @@ export default function WebStrikePage() {
                     <div className="flex items-center gap-2">
                       <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
                       <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-800">
-                        DEFENCE RADAR
+                        DEFENCE & CLOUD HUD
                       </span>
                     </div>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-[#FF6700]/10 text-[#FF6700] font-semibold border border-[#FF6700]/20">
-                      SENTINEL 24/7
+                      MULTI-CLOUD
                     </span>
                   </div>
 
@@ -193,22 +194,26 @@ export default function WebStrikePage() {
                       <span className="font-mono font-semibold text-slate-900">Port & Config</span>
                     </div>
                     <div className="flex items-center justify-between py-1 border-b border-slate-50 text-slate-600">
-                      <span className="text-slate-500">Visual Integrity</span>
-                      <span className="font-semibold text-emerald-600">Defacement Guard</span>
+                      <span className="text-slate-500">Cloud Posture</span>
+                      <span className="font-semibold text-emerald-600">Azure · AWS · GCP</span>
                     </div>
                     <div className="flex items-center justify-between py-1 border-b border-slate-50 text-slate-600">
                       <span className="text-slate-500">Threat Detection</span>
                       <span className="font-mono font-semibold text-slate-900">Phishing Sentinel</span>
                     </div>
+                    <div className="flex items-center justify-between py-1 border-b border-slate-50 text-slate-600">
+                      <span className="text-slate-500">Quantum Readiness</span>
+                      <span className="font-mono font-semibold text-slate-900">NIST PQC Aligned</span>
+                    </div>
                     <div className="flex items-center justify-between py-1 text-slate-600">
                       <span className="text-slate-500">Reporting</span>
-                      <span className="font-semibold text-[#FF6700]">One-Click PDF</span>
+                      <span className="font-semibold text-[#FF6700]">One-Click PDF (A-F)</span>
                     </div>
                   </div>
 
                   <div className="pt-2 border-t border-slate-100 text-[11px] font-mono text-slate-500 flex items-center justify-between">
-                    <span>PERIMETER STATUS</span>
-                    <span className="text-emerald-600 font-semibold">● PROTECTED</span>
+                    <span>SECURITY SCORECARD</span>
+                    <span className="text-emerald-600 font-semibold">● ACTIVE</span>
                   </div>
                 </div>
               </div>
@@ -228,11 +233,11 @@ export default function WebStrikePage() {
                     <span>WHAT WE SOLVE</span>
                   </div>
                   <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 leading-tight">
-                    Catch website threats <br />
+                    Catch security gaps <br />
                     before they turn into breaches.
                   </h2>
                   <p className="mt-4 text-[15px] sm:text-[16px] text-slate-600 leading-relaxed max-w-2xl">
-                    From hidden vulnerabilities to real-time threat intelligence. Continuous checks catch certificate and config drift as it happens, closing the 365-day blind spots with graded, plain-language scorecards leadership can act on.
+                    From website vulnerabilities and phishing domains to cloud posture and post-quantum readiness. Regular checks catch certificate, configuration and exposure drift early, closing the 365-day blind spots with graded, plain-language scorecards leadership can act on.
                   </p>
                 </div>
 
@@ -260,6 +265,12 @@ export default function WebStrikePage() {
                     </div>
                   ))}
                 </div>
+
+                {/* Across Every Module Banner */}
+                <div className="rounded-2xl border border-slate-200 bg-[#F5F5F5] p-4 text-[13px] sm:text-[14px] text-slate-700 font-medium text-center shadow-sm">
+                  <span className="font-mono text-xs uppercase tracking-wider text-[#FF6700] font-bold mr-2">Across Every Module</span>
+                  Live command dashboard · One-click graded executive reports (A to F) with plain-language fixes
+                </div>
               </div>
 
               {/* Right Column: Sticky Sidebar Card */}
@@ -273,7 +284,7 @@ export default function WebStrikePage() {
                     Teams protecting digital trust for a living.
                   </h3>
                   <p className="mt-2 text-xs text-slate-500 leading-relaxed">
-                    WebStrike serves any organisation that manages, owns, or is responsible for public-facing web infrastructure.
+                    WebStrike serves any organisation that manages, owns, or is responsible for public-facing web infrastructure and cloud environments - from single-site startups to enterprise-grade fleets.
                   </p>
                 </div>
 
@@ -294,7 +305,7 @@ export default function WebStrikePage() {
                 <div className="border-t border-slate-100 pt-6 space-y-3">
                   <h4 className="text-[16px] sm:text-[18px] font-bold text-slate-900">Explore WebStrike</h4>
                   <p className="text-[13px] sm:text-[14px] text-slate-500">
-                    Bring us a domain - see the full audit and watchdog workflow end to end.
+                    Bring us a domain or a cloud account - see the full audit end to end.
                   </p>
                   <Link
                     href="/#contact"
@@ -328,7 +339,7 @@ export default function WebStrikePage() {
                 <span>HOW IT WORKS</span>
               </div>
               <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 leading-tight">
-                One website in. <br />
+                One asset in. <br />
                 A professional security report out.
               </h2>
             </div>
@@ -369,7 +380,7 @@ export default function WebStrikePage() {
                   could unlock for your organisation.
                 </h3>
                 <p className="text-[13px] sm:text-[14px] text-white/90 leading-relaxed">
-                  Bring us a domain - see the full audit and watchdog workflow end to end.
+                  Bring us a domain or a cloud account - see the full audit end to end.
                 </p>
               </div>
 

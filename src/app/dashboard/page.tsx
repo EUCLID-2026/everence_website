@@ -214,7 +214,7 @@ export default function DashboardPage() {
                 </div>
                 <h3 className="text-sm font-bold text-slate-900">WebStrike</h3>
                 <p className="text-xs text-slate-500 leading-relaxed">
-                  24/7 defacement sentinel, perimeter & port recon, phishing detection, and executive scorecards.
+                  Cloud posture checks (Azure, AWS, GCP), perimeter & port recon, phishing detection, and executive scorecards.
                 </p>
               </Link>
             </div>

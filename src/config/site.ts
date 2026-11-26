@@ -85,15 +85,15 @@ export const siteConfig = {
     {
       id: "webstrike",
       name: "WebStrike",
-      category: "WEBSITE DEFENCE",
+      category: "WEBSITE & CLOUD SECURITY",
       symbol: "⚡",
-      tagline: "Understand the security behind every website you own.",
+      tagline: "Understand the security behind every website and cloud you own.",
       description:
-        "WebStrike turns complex vulnerability tests, uptime tracking, and visual alterations into one clear security scorecard - 24/7 defacement sentinel, perimeter audit, real-time alerts, and professional executive reports.",
+        "WebStrike turns website audits, network probing, uptime tracking, phishing detection and cloud posture checks into one clear security scorecard - with professional executive reports. No agents to install. Read-only cloud access.",
       bullets: [
-        "24/7 defacement & downtime sentinel",
-        "Perimeter, port & misconfiguration audit",
-        "Phishing website detection & executive reports",
+        "Cloud posture management (Azure, AWS, GCP)",
+        "Website audit, network probing & uptime tracking",
+        "Phishing detection & PQC cloud readiness",
       ],
       pageHref: "/products/webstrike",
       pdfHref: "/resources/webstrike-product-one-pager.pdf",
